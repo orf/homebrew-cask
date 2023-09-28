@@ -1,0 +1,17 @@
+cask "dash-docset-generator" do
+  version "2023.09.28"
+  sha256 :no_check
+
+  url "https://kapeli.com/feeds/zzz/DocsetGenerator.tgz"
+  name "dash-docset-generator"
+  desc "Dash Docset Generator"
+  homepage "https://kapeli.com/"
+
+  binary "DocsetGenerator/DocsetGenerator"
+
+  livecheck do
+    strategy :header_match do |headers|
+      Date.parse(headers["last-modified"]).strftime("%Y.%m.%d")
+    end
+  end
+end
