@@ -4,7 +4,7 @@ cask "dash-docset-generator" do
 
   url "https://kapeli.com/feeds/zzz/DocsetGenerator.tgz"
   name "dash-docset-generator"
-  desc "Dash Docset Generator"
+  desc "Generate Dash docsets from websites"
   homepage "https://kapeli.com/"
 
   binary "DocsetGenerator/DocsetGenerator"
